@@ -1,0 +1,552 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Estilo do menu */
+div.menu {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    grid-template-areas: "logo nav";
+    background: black
+}
+
+div.menu div#logo{
+    grid-area: logo;
+    background: url("imagens/logo.png") no-repeat center;
+}
+
+div.menu nav {
+    grid-area: nav;
+    height: 60px;
+}
+
+/* Stilo do botão do menu para mobile */
+div.bt{
+    height: 60px;
+}
+
+div.bt input {
+    display: none;
+}
+
+div.bt label{
+    margin: auto;
+    height: 60px;
+}
+
+div.bt img{
+    display: block;
+    margin: 10px 10px auto auto;
+}
+
+/* Icones do menu */
+div.menu ul{
+    display: none;
+    margin-top: 0;
+    margin-left: auto;
+    top: 60px;
+    position: absolute;
+    list-style: none;
+}
+
+div.menu ul.nav-linksAberto {
+    display: contents;
+    width: 250px;
+    right: 0;
+    display: block;
+}
+
+
+div.menu a {
+    margin: auto;
+    padding: 18px;
+    text-align: right;
+    text-decoration: none;
+    display: block;
+    color: white;
+    background: black;
+}
+
+
+
+
+/* Definição do grib principal para Mobile! */
+div.conteiner {
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+    grid-template-areas: 
+    "banner banner banner"
+    ". sobre ."
+    ". sobreint ."
+    "show show show"
+    ". contato ."
+}
+/* Stilo do banner/header*/
+
+ header{
+    grid-area: banner;
+    padding: 0;
+    background: url("imagens/ny.jpg") no-repeat center;
+    background-size: 100%;
+    height: 241.5px;
+}
+
+header p {
+    display: none;
+}
+ 
+/* Stilo da seção sobre a banda */
+
+section#banda {
+    grid-area: sobre;
+    margin: auto;
+}
+
+section#banda h2, h3{
+    text-align: center
+}
+
+section#banda h2{
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+section#banda h3{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    text-decoration: italic;
+}
+
+section#banda p {
+    text-align: justify;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+/* Stilo da seção sobre os integrantes */
+
+section#sobreint {
+    grid-area: sobreint;
+    height: auto;
+    margin: auto auto;
+    padding: 20px;
+    text-align: center;
+}
+
+section#sobreint h2{
+    margin-top: 40px;
+}
+
+section#sobreint figure{
+    width: 95%;
+    margin: 50px auto ;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6)
+}
+
+section#sobreint p.nome {
+    margin: 20px auto;
+    padding-top: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+section#sobreint img {
+    width: 100%;
+}
+
+figure figcaption{
+    text-align: left;
+    line-height: 20px;
+}
+
+section#sobreint figure#vocalista {
+    grid-area: vocal;
+}
+
+section#sobreint figure#guitarista {
+    grid-area: guitarra;
+}
+
+section#sobreint figure#baterista {
+    grid-area: bateria;
+}
+
+section#sobreint figure{
+    width: 90%;
+    margin: 10px auto;
+    display: inline-block;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6)
+}
+
+/* Estilo dos tour e Show */
+
+section#tourEshow {
+    grid-area: show;
+    
+}
+
+section#tourEshow{
+    width: 100%;
+    margin-top: 25px;
+    padding: 20px 0;
+    background-color: black;
+    text-align: center;
+}
+
+section#tourEshow div{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "titulo"
+    "subtitulo"
+    "set"
+    "out"
+    "nov"
+    "cidade1"
+    "cidade2"
+    "cidade3"
+    "titiloCompra"
+    "formulario";
+    justify-items: center;
+}
+
+section#tourEshow h2{
+    grid-area: titulo;
+    width: 100%;
+    color: #ffffff;
+    margin: 40px auto;
+    font: 25px arial;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section#tourEshow h3{
+    grid-area: subtitulo;
+    color: rgb(136, 128, 128);
+    font: 18px arial;
+    margin-bottom: 25px;
+}
+
+p#set, p#out, p#nov{
+    border: 1px solid rgba(197, 189, 189, 0.7);
+    width: 100%;
+}
+
+p#set{
+    grid-area: set;
+}
+p#out{
+    grid-area: out;
+}
+p#nov {
+    grid-area: nov
+}
+
+section#tourEshow span {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 100px;
+    display: inline-block;
+    margin-left: auto;
+}
+
+
+section#tourEshow figure{
+    width: 90%;
+    background-color: white;
+    display: inline-block;
+}
+
+section#tourEshow figure#cid1 {
+    grid-area: cidade1
+}
+
+section#tourEshow figure#cid2 {
+    grid-area: cidade2
+}
+
+section#tourEshow figure#cid3 {
+    grid-area: cidade3
+}
+
+section#tourEshow figcaption{
+    background-color: white;
+
+}
+
+section#tourEshow p#cidade1, p#cidade2, p#cidade3 {
+    font-weight: bold;
+}
+
+section#tourEshow p {
+    width: 90%;
+    margin: 0 auto;
+    padding: 12px;
+    background-color: white;
+    text-align: left;
+}
+section#tourEshow img{
+    width: 100%;
+}
+
+section#tourEshow button {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+    border: 0;
+}
+
+/* Stilo do formulário para a compra dos ingressos! */
+
+section#tourEshow h2#compradeingresso{
+    grid-area: titiloCompra;
+}
+form#compra {
+    grid-area: formulario;
+    width: 95%;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form#compra label{
+    color: white;
+    font: 20px arial;
+    font-weight: 200;
+}
+
+
+form#compra input, select{
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px 0;
+    border-radius: 4px;
+    background-color: white;
+}
+
+form#compra input#finalizarCompra {
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(38, 199, 38);
+    transition: all 0.4s;
+}
+
+form#compra input#finalizarCompra:hover {
+    background-color: rgb(25, 141, 25);
+}
+
+
+/* Estilo da área de contatos */
+
+section#contato {
+    grid-area: contato;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "titulo"
+    "lista"
+    "mensagem";
+    margin: 40px 20px;
+}
+
+section#contato h2{
+    grid-area: titulo;
+    margin: 40px auto;
+    font: 25px arial;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center
+}
+
+section#contato div#lista{
+    grid-area: lista;
+    width: 100%;
+    display: inline-block;
+}
+
+
+section#contato p#local{
+    background: url(imagens/contatos/locate.png) no-repeat left center;
+    background-size: 15px;
+    padding: 5px 22px;
+}
+
+section#contato p#cel{
+    background:url(imagens/contatos/celular.png) no-repeat left center;
+    background-size: 17px;
+    padding: 5px 22px;
+}
+
+section#contato p#contatoEmail{
+    background: url(imagens/contatos/email.png) no-repeat left center;
+    background-size: 18px;
+    padding: 5px 22px;
+}
+
+
+section#contato div#menTexto{
+    grid-area: mensagem;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+section#contato div#menTexto input[type=text] {
+    width: 45%;
+    height: 40px;
+    padding: 20px auto;
+    margin: 10px 0px 10px 0;
+}
+
+section#contato div#menTexto input[type=email]{
+    width: 48%;
+    height: 40px;
+    padding: 20px 0 20px 5;
+    margin: 10px 7px 10px 0;
+}
+
+section#contato div#menTexto textarea{
+    width: 100%;
+    height: 40px;
+}
+
+/* Stilo do rodapé da página: */
+
+footer#rodape {
+    width: 100%;
+    margin-top: 20px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+
+@media screen and (min-width: 900px){ /* Area de Stilo para tela de computadores ou superiores*/
+
+    /* Stilo do nav bar */
+    div.menu {
+        display: grid;
+        grid-template-columns: 210px 1fr;
+        grid-template-areas: "logo nav";
+    }
+    
+    div.menu nav{
+        justify-self: end;
+    }
+    .bt{
+        display: none
+    }
+
+    div.menu ul{
+        display: contents;
+        position: relative;
+        width: 500px;
+        padding-right: 10px;        
+    }
+    
+    div.menu li {
+        display: inline-block;
+    }
+
+    div.menu a {
+        border-radius: 2px;
+    }
+
+    div.menu a:hover{
+        background: rgb(190, 190, 190)
+    }
+    
+    /* grid principal */
+    div.conteiner {
+        display: grid;
+        grid-template-columns: 1fr repeat(4, 250px) 1fr;
+        grid-template-areas: 
+        "banner banner banner banner banner banner"
+        ". sobre sobre sobre sobre ."
+        ". sobreint sobreint sobreint sobreint ."
+        "show show show show show show"
+        ". contato contato contato contato .";
+    }
+
+    /* banner */
+    header{
+        background-size: 100%;
+        height: 100%;
+    }
+
+    header p {
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 40%;
+        color: white;
+        font-weight: bold
+    }
+    
+
+    /* Sobre a banda e integrantes */
+    section#sobreint {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "vocal guitarra bateria"
+    }
+
+    section#sobreint h2{
+        grid-area: titulo;
+    }
+
+    section#sobreint p.nome {
+        margin: 10px auto;
+        padding: 0;
+    }
+    
+
+    section#sobreint figure{
+        width: 90%;
+        margin: 10px auto;
+        display: inline-block;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6)
+    }
+
+  /* Estilo data dos shows */
+    section#tourEshow div{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "titulo titulo titulo"
+    "subtitulo subtitulo subtitulo"
+    "set set set"
+    "out out out"
+    "nov nov nov"
+    "cidade1 cidade2 cidade3"
+    "titiloCompra titiloCompra titiloCompra"
+    "formulario formulario formulario";
+    justify-items: center;
+    width: 64%;
+    }
+
+ 
+
+  /* Grid contato */
+  section#contato {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "titulo  titulo"
+    "lista  mensagem";
+    margin: 40px 20px;
+    }
+}

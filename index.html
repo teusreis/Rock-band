@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- html do menu de navegação pelo site -->
+    <div class="menu">
+        <div id="logo">
+            <!-- logo da Banda! -->
+        </div>
+        <nav>
+            <div class="bt">
+                <input type="checkbox" id="ckeck">
+                <label id="icone" for="ckeck"><img src="imagens/icone.png" alt=""></label>
+            </div>
+
+            <ul class="">
+                <li class="links"><a href="#">HOME</a></li>
+                <li class="links"><a href="#banda">BAND</a></li>
+                <li class="links"><a href="#tourEshow">SHOWS</a></li>
+                <li class="links"><a href="#compradeingresso">INGRESSO</a></li>
+                <li class="links"><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="conteiner">
+        <header>
+            <!-- html do banner da banda -->
+            <p>Rock Band</p>
+        </header>
+
+
+        <!-- html da area sobre a banda -->
+        <section id="banda">
+            <h2 id="sobre-a-banda">Sobre a Banda</h2>
+            <h3><i>We love music</i></h3>
+            <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </section>
+        <!-- html da seção que fala dos integrates -->
+        <section id="sobreint">
+            <h2>Integrantes da banda</h2>
+            <figure id="vocalista" class="membro">
+                <p class="nome">Marcos silva</p>
+                <img src="imagens/integrantes/vocalista.jpg" alt="vocalista da banda">
+                <figcaption>
+                    <p><b>Instrumento:</b> Vocal</p>
+                    <p><b>Cidade:</b> Rio de Janeiro</p>
+                    <p><b>Idade:</b> 22 Anos</p>
+                </figcaption>
+            </figure>
+            <figure id="guitarista" class="membro">
+                <p class="nome">Mateus Reis</p>
+                <img src="imagens/integrantes/guitarista.jpg" alt="Guitarista da banda">
+                <figcaption>
+                    <p><b>Instrumento:</b> Guitarra</p>
+                    <p><b>Cidade:</b> São Paulo</p>
+                    <p><b>Idade:</b> 20 Anos</p>
+                </figcaption>
+            </figure>
+            <figure id="baterista" class="membro">
+                <p class="nome">Lucas Fernandes</p>
+                <img src="imagens/integrantes/baterista.jpg" alt="Guitarista da banda">
+                <figcaption>
+                    <p><b>Instrumento:</b> Bateria<p>
+                            <p><b>Cidade:</b> Belo Horizonte</p>
+                            <p><b>Idade:</b> 22 Anos</p>
+                </figcaption>
+            </figure>
+        </section>
+        <!-- html das datas dos shows -->
+        <section id="tourEshow">
+            <div>
+                <h2>Datas dos Shows</h2>
+                <h3>Click no mês para checar a agenda da banda</h3>
+                <p id="set">Setembro <span>3</span></p>
+                <p id="out">Outubro <span>2</span></p>
+                <p id="nov">Novembro <span>3</span></p>
+                <figure id="cid1">
+                    <img id="imgCidade1" src="imagens/cidadeshow/show-saopaulo.jpg" alt="">
+                    <figcaption>
+                        <p id="cidade1">São Paulo</p>
+                        <p id="data1">Sexta, 13 Set 2019 </p>
+                        <p id="endereco1">Praça Ramos De Azevedo República, São Paulo - SP.</p>
+                        <button id="btCompra">Buy Ticket</button>
+                    </figcaption>
+                </figure>
+                <figure id="cid2">
+                    <img id="imgCidade2" src="imagens/cidadeshow/show-riodejaneiro.jpg" alt="">
+                    <figcaption>
+                        <p id="cidade2">Rio de Janeiro</p>
+                        <p id="data2">Sexta, 20 Set 2019 </p>
+                        <p id="endereco2">R. Alcindo Guanabara, Centro, Rio de Janeiro - RJ.</p>
+                        <button>Buy Ticket</button>
+                    </figcaption>
+                </figure>
+                <figure id="cid3">
+                    <img id="imgCidade3" src="imagens/cidadeshow/show-belohorizonte.jpg" alt="">
+                    <figcaption>
+                        <p id="cidade3">Belo Horizonte</p>
+                        <p id="data3">Sexta, 27 Set 2019 </p>
+                        <p id="endereco3">Av. Afonso Pena, 1537 - Centro, Belo Horizonte - MG.</p>
+                        <button>Buy Ticket</button>
+                    </figcaption>
+                </figure>
+                <h2 id="compradeingresso">Comprar Ingresso</h2>
+                <form id="compra" action="" method="post">
+                    <label for="cidadeEdata">Data:</label>
+                    <select name="" id="cidadeEdata">
+                        <optgroup label="Setembro">
+                            <option value="sp">São Paulo: Sexta, 13 Set 2019</option>
+                            <option value="rj">Rio de Janeiro: Sexta, 20 Set 2019</option>
+                            <option value="bh">Belo Horizonte: Sexta, 27 Set 2019</option>
+                        </optgroup>
+                        <optgroup label="Outubro">
+                            <option value="">Buenos Aires, Sexta, 11 Out 2019</option>
+                            <option value="">Chile, Sexta, 18 Out 2019</option>
+                            <option value="">Cuba, Sexta, 25 Out 2019</option>
+                        </optgroup>
+                        <optgroup label="Novemvbro">
+                            <option value="">Nova York, Sexta, 15 Nov 2019</option>
+                            <option value="">Paris, Sexta, 22 Nov 2019</option>
+                            <option value="">São Francisco, Sexta, 22 Nov 2019</option>
+                        </optgroup>
+                    </select>
+                    <label for="numIngresso">Ingresos, R$30 por pessoa!</label>
+                    <input id="numIngresso" type="number" max="10" placeholder="Quantos">
+
+                    <label for="valor">Valor Total: </label>
+                    <input id="valor" type="number" placeholder="R$: $$$$" readonly>
+
+                    <label for="emal">Enviar Para:</label>
+                    <input type="email" name="" id="email" placeholder="Email: " required>
+
+                    <input id="finalizarCompra" type="submit" value="Finalizar Compra">
+                </form>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Contatos da Banda</h2>
+            <div id="lista">
+                <p id="local">São Paulo, BRl</p>
+                <p id="cel">Telefone: (11) 9 9999-9999</p>
+                <p id="contatoEmail">bandaRock@gmail.com</p>
+            </div>
+            <div id="menTexto">
+                <input type="text" placeholder=" Nome">
+                <input type="email" name="" id="" placeholder="Email"><br>
+                <textarea name="" id="" cols="30" rows="10" placeholder=" Mensagem"></textarea>
+            </div>
+        </section>
+    </div>
+    <footer id="rodape">
+        <p> &copy Desenvolvido por Mateus C. Reis</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
